@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Keep on rollin'!
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+
+			var rollin1 = prompt("Give me a number for the first roll (1-6)");
+			var rollin2 = prompt("Give me a number for the second roll (1-6)");
+
+			rollin1 = parseInt(rollin1, 10);
+			rollin2 = parseInt(rollin2, 10);
+
+			if(rollin2 > 6 || rollin2 < 1)
+			{
+				console.log("A die don't have that number.");
+			} else if(rollin1 > 6 || rollin1 < 1)
+				{
+					console.log("A die don't have that number.");
+				} else
+					{
+						console.log("You rolled a " + rollin1 + " on your first roll. " + "You rolled a " + rollin2 + " on your second roll. Therefore, you get: " + (rollin1 + rollin2));
+					}
+		</script>
+	</body>
+</html>
