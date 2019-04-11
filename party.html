@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Party Hard
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var partyCountdown = prompt("How long 'till the party?");
+			parseInt(partyCountdown, 10);
+
+			for(var i = partyCountdown; i > 0; i--)
+			{
+				if(partyCountdown > 20)
+				{
+					alert("Stop! That's too much! Go less than 20 next time please.");
+					break;
+				}
+				alert(i);
+				console.log(i);
+				if(i <= 1)
+				{
+					alert("PARTY NOW!!");
+					console.log("PARTY NOW!!");
+					alert("PARTY TIME!!");
+					console.log("PARTY TIME!!");
+				}
+			}
+			/*alert("PARTY TIME!!");
+			console.log("PARTY TIME!!");*/
+		</script>
+	</body>
+</html>
