@@ -11,18 +11,23 @@
 			var rollin1 = prompt("Give me a number for the first roll (1-6)");
 			var rollin2 = prompt("Give me a number for the second roll (1-6)");
 
-			rollin1 = parseInt(rollin1, 10);
-			rollin2 = parseInt(rollin2, 10);
+			rollin1Int = parseInt(rollin1, 10);
+			rollin2Int = parseInt(rollin2, 10);
 
-			if(rollin2 > 6 || rollin2 < 1)
+			if(rollin2Int > 6 || rollin2Int < 1)
 			{
+				alert("A die don't have that number.");
 				console.log("A die don't have that number.");
-			} else if(rollin1 > 6 || rollin1 < 1)
+				break;
+			} else if(rollin1Int > 6 || rollin1Int < 1)
 				{
+					alert("A die don't have that number.");
 					console.log("A die don't have that number.");
+					break;
 				} else
 					{
-						console.log("You rolled a " + rollin1 + " on your first roll. " + "You rolled a " + rollin2 + " on your second roll. Therefore, you get: " + (rollin1 + rollin2));
+						alert("You rolled a " + rollin1 + " on your first roll. " + "You rolled a " + rollin2 + " on your second roll. Therefore, you get: " + (rollin1Int + rollin2Int));
+						console.log("You rolled a " + rollin1 + " on your first roll. " + "You rolled a " + rollin2 + " on your second roll. Therefore, you get: " + (rollin1Int + rollin2Int));
 					}
 		</script>
 	</body>

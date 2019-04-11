@@ -8,19 +8,17 @@
 	<body>
 		<script type="text/javascript">
 			alert("We are going to average your numbers. Please click ok.");
+			var averageTotal = 0;
 
-			var num1 = prompt("Number please.");
-			var num2 = prompt("Number please.");
-			var num3 = prompt("Number please.");
-			var num4 = prompt("Number please.");
-			parseInt(num1, 10);
-			parseInt(num2, 10);
-			parseInt(num3, 10);
-			parseInt(num4, 10);
-			var averageTotal = (num1 + num2 + num3 + num4) / 4;
+			for(var i = 0; i < 4; i++)
+			{
+			var numbers = prompt("Number please.");
+			var numbersInt = parseInt(numbers, 10);
+			averageTotal = numbersInt + averageTotal;
+			}
 
-			alert("The average is " + averageTotal + ".");
-			console.log("The average is " + averageTotal + ".");
+			alert("The average is " + (averageTotal / 4) + ".");
+			console.log("The average is " + (averageTotal / 4) + ".");
 		</script>
 	</body>
 </html>
